@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="3173" y="-510"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="7YL-wE-BU8">
             <objects>
-                <viewController id="fxz-4P-utw" sceneMemberID="viewController">
+                <viewController id="fxz-4P-utw" customClass="RegisterViewController" customModule="EricssonShowCaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wEw-nl-HcH"/>
                         <viewControllerLayoutGuide type="bottom" id="xic-bZ-WeL"/>
@@ -170,6 +170,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="fxz-4P-utw" eventType="touchUpInside" id="rVJ-Vt-qGR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNc-RH-mkQ">
                                 <rect key="frame" x="20" y="487" width="276" height="32"/>
@@ -183,10 +186,15 @@
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="repeatPasswordTextField" destination="i6O-99-gDT" id="1mX-43-Vfl"/>
+                        <outlet property="userEmailTextField" destination="Xie-FW-YNI" id="5kA-8e-TSC"/>
+                        <outlet property="userPasswordTextField" destination="T92-dc-Oqg" id="QbQ-MS-5E7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bbl-TL-bzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3173" y="235"/>
+            <point key="canvasLocation" x="3178" y="232"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7W-iR-m88">
